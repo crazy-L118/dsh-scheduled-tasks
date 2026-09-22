@@ -17,7 +17,7 @@
 
 前置条件：已安装 [dsh](https://www.npmjs.com/package/@deepseek-ai/dsh) 与 pnpm。
 
-发布到 npm 后（推荐）：
+从 npm 安装：
 
 ```sh
 dsh plugin --profile web add dsh-scheduled-tasks

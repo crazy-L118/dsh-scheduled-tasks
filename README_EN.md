@@ -17,7 +17,7 @@ A **scheduled-task plugin** for the [DeepSeek Harness (dsh)](https://deepseek.co
 
 Prerequisites: [dsh](https://www.npmjs.com/package/@deepseek-ai/dsh) and pnpm installed.
 
-Once published to npm (recommended):
+Install from npm:
 
 ```sh
 dsh plugin --profile web add dsh-scheduled-tasks
