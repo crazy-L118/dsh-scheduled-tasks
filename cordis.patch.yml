@@ -1,0 +1,6 @@
+# dsh-scheduled-tasks bundle patch: inserts the scheduled-task plugin row into
+# the web profile roster. Applied as a profile bundle layer (the
+# `dsh.bundle.patch` manifest field).
+- insert:
+    - id: dsh-scheduled-tasks
+      name: 'dsh-scheduled-tasks'

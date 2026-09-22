@@ -1,0 +1,51 @@
+{
+  "name": "dsh-scheduled-tasks",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scheduled-task plugin for the dsh web sidebar: create tasks that run a natural-language prompt in dsh at a set time (one-off / daily / weekly / interval), with a sidebar manager UI placed between the New Session button and the Workspace list. UI language follows the dsh language setting (zh/en).",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "scheduler",
+    "scheduled-tasks",
+    "cron",
+    "automation",
+    "sidebar",
+    "i18n"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "test",
+    "skills",
+    "README.md",
+    "README_EN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}
