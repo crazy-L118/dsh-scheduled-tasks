@@ -1,6 +1,6 @@
 {
   "name": "dsh-scheduled-tasks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "description": "Scheduled-task plugin for the dsh web sidebar: create tasks that run a natural-language prompt in dsh at a set time (one-off / daily / weekly / interval), with a sidebar manager UI placed between the New Session button and the Workspace list. UI language follows the dsh language setting (zh/en).",
   "keywords": [

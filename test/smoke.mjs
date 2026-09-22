@@ -242,7 +242,7 @@ assert.equal(result.ok, true, "runner ok");
 assert.deepEqual(lastCreateOptions.agentOptions, { provider: "prov", model: "mdl" }, "default selection used");
 assert.ok(delivered && delivered.role === "user", "user message delivered");
 assert.equal(delivered.content[0].text, "do the thing");
-assert.equal(delivered.source.plugin, "dsh-scheduled-tasks", "plugin source stamped");
+assert.equal(delivered.source.kind, "user", "human-equivalent source stamped (authority checks pass)");
 assert.equal(result.summary, "run complete", "assistant summary extracted");
 
 // Per-task approval policy is stamped into the session log before the run.
