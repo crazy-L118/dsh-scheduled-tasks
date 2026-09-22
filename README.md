@@ -23,12 +23,6 @@
 dsh plugin --profile web add dsh-scheduled-tasks
 ```
 
-或从 GitHub 安装：
-
-```sh
-dsh plugin --profile web add github:<你的用户名>/dsh-scheduled-tasks
-```
-
 安装后**重启 `dsh web`**，侧边栏即可看到「定时任务」入口。
 
 ## 使用

@@ -23,12 +23,6 @@ Once published to npm (recommended):
 dsh plugin --profile web add dsh-scheduled-tasks
 ```
 
-Or from GitHub:
-
-```sh
-dsh plugin --profile web add github:<your-username>/dsh-scheduled-tasks
-```
-
 **Restart `dsh web`** after installing; the "Scheduled Tasks" entry appears in the sidebar.
 
 ## Usage
